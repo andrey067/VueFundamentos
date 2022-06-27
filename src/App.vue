@@ -1,27 +1,35 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+  <Header></Header>
+  <h1>Hello Word</h1>
+  <my-first-component />
+  <life-cycle />
+  <Lista />
+  <Pessoa />
+  <Evento />
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
-import HelloWorld from './components/HelloWorld.vue';
-
-export default defineComponent({
-  name: 'App',
+import LifeCycle from '@/components/LifeCycle.vue'
+import MyFirstComponent from "@/components/MyFirstComponent.vue"
+import Pessoa from "@/components/Pessoa.vue"
+import Header from './components/Header.vue'
+import Lista from './components/Lista.vue'
+import Evento from './components/Evento.vue'
+export default {
+  name: "App",
   components: {
-    HelloWorld
+    MyFirstComponent,
+    LifeCycle,
+    Pessoa,
+    Header,
+    Lista,
+    Evento
   }
-});
+}
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style >
+body {
+  background-color: rgb(121, 180, 103);
+  color: #FFFF;
 }
 </style>
