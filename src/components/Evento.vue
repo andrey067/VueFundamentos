@@ -1,7 +1,7 @@
 <template>
     <div>
         <h2> Meu Formulario:</h2>
-        <form action="" @submit="enviarFormulario()">
+        <form action="" @click="enviarFormulario">
             <p>
                 <label for="name">Nome</label>
                 <input id="name" v-model="nome" type="text" name="name">
@@ -23,7 +23,7 @@ export default {
 
     },
     methods: {
-        enviarFormulario: (e: Event) => {
+        enviarFormulario: (e : Event) => {
             e.preventDefault();
             console.log("Formulario Enviados");
             console.log()

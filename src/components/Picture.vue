@@ -10,7 +10,7 @@ export default {
     name: "Picture",
     data() {
         return {
-            logo: "../assets/logo.png",
+            logo: "../assets/avatar.png",
             descricao: "Logo"
         }
     }

@@ -6,6 +6,8 @@
   <Lista />
   <Pessoa />
   <Evento />
+  <PropsPai/>
+  <EmitPai/>
 </template>
 
 <script lang="ts">
@@ -15,6 +17,9 @@ import Pessoa from "@/components/Pessoa.vue"
 import Header from './components/Header.vue'
 import Lista from './components/Lista.vue'
 import Evento from './components/Evento.vue'
+import PropsPai from './components/PropsPai.vue'
+import EmitPai from './components/EmitPai.vue'
+
 export default {
   name: "App",
   components: {
@@ -23,7 +28,9 @@ export default {
     Pessoa,
     Header,
     Lista,
-    Evento
+    Evento,
+    PropsPai,
+    EmitPai
   }
 }
 </script>
